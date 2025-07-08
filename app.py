@@ -6,7 +6,7 @@ from groq import Groq
 
 # Load API key from .env file
 load_dotenv()
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 MODEL_NAME = "gemma-2b-it"  # use any supported model: gemma-2b-it, llama3-8b, etc.
 
 # Check if the key is loaded
